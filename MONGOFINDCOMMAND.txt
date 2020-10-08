@@ -1,0 +1,29 @@
+for(i=0;i<200;i++){db.dummydata_new.insert({Title:"tesla 3 Released",view:898989} );}
+
+
+db.regions.find({RegionDescription:"Northern",RegionID:3})
+db.regions.find({RegionID:4})
+db.regions.find({RegionID:4},{_id:0,RegionID:0})
+db.regions.find({}).count()
+db.regions.find({}).limit(2)
+db.regions.find({}).skip(2)
+db.regions.find({}).sort({RegionID:1})
+
+
+
+
+db.products.find({})
+db.products.find({UnitPrice:{$lt:100}})
+db.products.find({UnitPrice:{$eq:22}})
+db.products.find({UnitPrice:{$gt:30,$lt:50}})
+db.products.find({$and:[{Discontinued:1},{UnitPrice:{$gt:10}}]})
+db.products.find({$and:[{Discontinued:1},{UnitPrice:22}]})
+db.products.find({$or:[{Discontinued:1},{UnitPrice:{$gt:10}}]})
+db.products.find({$or:[{Discontinued:1},{UnitPrice:22}]})
+
+
+
+         UPDATE
+
+
+

@@ -1,0 +1,72 @@
+db.students.find({name: "pankaj"}).pretty()
+
+db.students.find({courseCount:{$gt: 1}}).pretty()
+
+db.students.updateOne({_id: ObjectId("5f33c8875d9085fde17bbc57")}, {$set: {courseCount: 9}})
+
+db.students.deletMany({})
+
+db.students.insertMany()
+
+db.students.find().forEach()
+
+db.students.find().forEach((students) => {printjson(students)})
+
+db.students.find().forEach((students) => {printjson(students.email)})
+
+
+
+db.students.find({} ,{email: 1, _id: 0, name: 1, courseCount: 1})
+
+db.students.find({} ,{email: 1, _id: 0}).toArray()
+
+
+
+use oldstudents
+db.students.insertMany()
+db.students.find()
+db.students.updateMany({}, {$set: {profilepic : {small: 50, med: 100, larg: 200}}})
+
+db.students.find({"profilepic.med": 100}).pretty()
+
+
+db.students.updateOne({_id:  ObjectId("5f34d48562076ad62ecd247e")}, {$set: {profilepic.med: 140}})
+
+db.students.updateOne({name: "Mark"}, {$set: {profilepic: {med: 140}}})
+db.students.updateOne({name: "Mark"}, {$set: {profilepic: {small: 0,"med": 14}}})
+
+db.students.updateOne({name: "Mark"}, {$set: {lastlogin: ["monday", "tuesday","wensday"]}})
+
+
+db.students.findOne({name: "Mark"}).lastlogin
+
+
+
+
+use courses
+
+db.course.insertOne({name: "java Bootvamp", price: 10})
+db.course.insertOne({title: "Android p", price: 10.2, faq: {q1: "answer1", q2: "answer2"}})
+
+
+
+                       Database modeling mongoDB series
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

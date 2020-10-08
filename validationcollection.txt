@@ -1,0 +1,23 @@
+{
+    $and:
+    [
+    {total_purchase:{$gte:1000} },
+    {country:{$in:['us', 'uk','brajil']}}
+]
+}
+
+
+
+
+
+
+db.getCollection("Amazonesoloffer").find({})
+
+
+db.Amazonesoloffer.insert({amzid:7123, total_purchase:11000,country:'uk'})
+
+db.Amazonesoloffer.insert({amzid:2123, total_purchase:99980,country:'us'})
+
+db.Amazonesoloffer.insert({amzid:2123, total_purchase:9800,country:'uk'})
+db.Amazonesoloffer.insert({amzid:7323, total_purchase:9000,country:'uk'})
+

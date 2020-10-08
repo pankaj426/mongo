@@ -1,0 +1,29 @@
+use youtube
+
+db.users.insertOne({
+name: "hitesh",
+video: {topic: "FunTopic", lenth: 4}
+})
+
+db.users.findOne()
+db.users.deleteMany({})
+
+
+
+
+                   One to one relation in mongo database with id
+
+db.persons.insertOne({
+name: "hitesh",
+isVerified: true,
+earning: 3000
+})
+
+
+db.videos.insertOne({
+topic: "Fun One",
+length:4,
+creator: ObjectId("5f36234a3a40a37765a22861")
+})
+
+db.videos.findOne()

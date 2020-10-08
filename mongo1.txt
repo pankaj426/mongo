@@ -1,0 +1,25 @@
+show dbs
+show databases
+use students
+db.students.insertOne({"id":1, "name":"pankaj", "city":"amethi"})
+db.students.find()
+
+db.students.find().pretty()
+
+db.students.deleteOne({email: "mark@example.com"})
+db.students.updateOne({name: "pankaj"}, {$set: {fbloggedIn: "yes"}})
+
+db.students.updateOne({}, {$set: {mark: "delete"}})
+
+db.students.updateOne({_id: "5f33c8875d9085fde17bbc57"}, {$set: {fbloggedIn:"yes"}})
+
+
+db.students.updateMany({fbloggedIn: "yes"}, {$set: {delte:"yes"}})
+
+
+db.students.updateMany({fbloggedIn: "yes"}, {$set: {delte:"yes"}})
+
+
+
+
+

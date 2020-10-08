@@ -1,0 +1,25 @@
+
+db.shippers_new.find({})
+
+db.shippers_new.update ({	"_id" : ObjectId("5f130765dd15a5a603451f5e")},{"CompanyName" : "United Package", "Phone":"799890909"})
+
+db.shippers_new.update ({	"_id" : ObjectId("5f130765dd15a5a603451f5e")},{$set:{ "Phone":"79980000"}})
+
+db.shippers_new.updateMany({},{$set:{Phone:'pankaj9898773838'}})
+
+db.shippers_new.updateOne({"CompanyName" : "company in patana"},{$set:{Phone:'manisha29898773838'}},{upsert:true})
+          
+
+                                              DELETE 
+db.customers_new.find({})
+
+db.customers_new.find({})
+
+db.customers_new.find({Country:'USA'})
+
+db.customers_new.distinct("Country")
+   
+db.customers_new.deleteOne({Country:'USA'})  
+db.customers_new.deleteMany({Country:'USA'})   
+db.customers_new.remove({Country:'USA'})  
+db.customers_new.remove({Country:'USA'},{justOne:true}) 

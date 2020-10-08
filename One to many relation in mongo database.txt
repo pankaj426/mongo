@@ -1,0 +1,45 @@
+use comments
+db.comment.insertOne({
+videoname: "rect js",
+comment: "how to install reactjs",
+replies: ["rep112", "rep223"]
+})
+
+db.comment.find()
+
+db.replies.insertMany([
+{
+_id: "rep112",
+text: "you can use node"
+},
+{
+_id: "rep223",
+text: "you con use homebre"
+}
+])
+
+
+db.replies.find()
+
+db.comment.deleteMany({})
+
+ db.comment.insertOne({ videoname: "rect js", comment: "how to install reactjs", replies: [{_id: "rep112", text: "stuff 1"}, {_id: "rep223", text: "stuff 2"}] })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

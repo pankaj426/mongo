@@ -1,0 +1,32 @@
+use lco
+db.courses.insertOne({
+name: "react native",
+price: 12.0
+})
+
+
+db.users.insertOne({
+name: "hitesh",
+isVerified: true
+})
+
+
+db.purchases.insertOne({
+productId: courseid,
+customerId :customerId
+})
+
+db.purchase.drop()
+
+      NEW WAY ANATHER APPROCH
+
+db.users.updateOne({}, {$set: {purchaselist: [{purchaseId: ObjectId("5f362d323a40a37765a22866")}]}})
+
+
+
+
+
+
+
+
+

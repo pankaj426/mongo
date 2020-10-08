@@ -1,0 +1,44 @@
+
+db.getCollection("records").find({}).limit(10)
+
+
+mongoimport  -d pkdata -c territories --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/territories.csv --headerline
+
+
+mongoimport  -d pkdata -c suppliers --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/suppliers.csv --headerline
+
+
+
+mongoimport  -d pkdata -c shippers --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/shippers.csv --headerline
+
+
+mongoimport  -d pkdata -c regions --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/regions.csv --headerline
+
+
+mongoimport  -d pkdata -c products --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/products.csv --headerline
+
+
+mongoimport  -d pkdata -c orders --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/orders.csv --headerline
+
+mongoimport  -d pkdata -c order-details --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/order-details.csv --headerline
+
+mongoimport  -d pkdata -c northwind --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/northwind.csv --headerline
+
+
+mongoimport  -d pkdata -c employee-territories --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/employee-territories.csv --headerline
+
+
+
+
+
+mongoimport  -d pkdata -c employees --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/employees.csv --headerline
+
+
+mongoimport  -d pkdata -c customers --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/customers.csv --headerline
+
+
+mongoimport  -d pkdata -c categories --type csv --file C:\Users\csc\Downloads\northwind-mongo-master\northwind-mongo-master/categories.csv --headerline
+
+
+
+

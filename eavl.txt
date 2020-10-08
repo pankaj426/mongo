@@ -1,0 +1,67 @@
+
+for(i=0;i<100;i++){
+
+db.jscollection.insert( { randomNumber:Math.floor(Math.random()*100)+1})
+}
+
+
+
+db.jscollection.find({randomNumber:{$gt:50}})
+
+var filmax=50
+db.jscollection.find({randomNumber:{$gt:filmax}})
+
+
+
+
+
+
+
+
+cursor_ret = db.getCollection('jscollection').find({})
+  
+while(cursor_ret.hasNext()){
+printjson(cursor_ret.next().randomNumber)
+}
+
+
+
+
+
+
+cursor_ret = db.getCollection('jscollection').find({})
+  
+while(cursor_ret.hasNext()){
+printjson(cursor_ret.next().randomNumber)
+
+db.testcollection.insert(cursor_ret.next())
+
+}
+
+      EVAL
+
+
+db.eval(
+
+   function sum(){
+   var sum_random=0
+   cursor=db.getCollection('jscollection').find({})
+    while( cursor.hasNext()){
+    sum_random=cursor.next().randomNumber
+    }
+    return sum_random;
+    
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
